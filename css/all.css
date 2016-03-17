@@ -1,0 +1,159 @@
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    -webkit-animation: fadein 10s;
+    -moz-animation: fadein 10s;
+    -ms-animation: fadein 10s;
+    -o-animation: fadein 10s;
+    animation: fadein 10s;
+    background: url(../img/cover.jpg) no-repeat;
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content .inner {
+    width: 560px;
+    margin: 0 auto;
+}
+
+img.bubble {
+    display: none;
+    position: absolute;
+}
+
+img#snack {
+    top: 0;
+    right: -20%;
+}
+
+img#great {
+    top: 17%;
+    right: -25%;
+}
+
+img#splash {
+    top: 30%;
+    right: -28%;
+}
+
+img#boom {
+    top: 46%;
+    right: -24%;
+}
+
+img#kapow {
+    top: 66%;
+    right: -24%;
+}
+
+img#bazinga {
+    top: -3%;
+    left: -25%;
+}
+
+img#grrr {
+    top: 65%;
+    left: -22%;
+}
+
+img#pufff {
+    top: -8%;
+    left: 29%;
+}
+
+img#kaboom {
+    top: 44%;
+    left: -15%;
+}
+
+img#crack {
+    bottom: -24%;
+    left: 10%;
+}
+
+img#bang {
+    top: 7%;
+    left: -25%;
+}
+
+.content img,
+span#calc {
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+span#calc {
+    display: block;
+    font-family: 'Comic Sans MS';
+    color: #fff;
+    font-size: 60px;
+    line-height: 125px;
+    margin: 0 0 0 8px;
+    height: 125px;
+    width: 454px;
+    background: url(../img/display.png) transparent no-repeat;
+    background-size: contain;
+    text-align: right;
+    padding: 0 20px 0 70px;
+}
+
+span#memories {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 161px;
+    font-family: 'Comic Sans MS';
+    color: #fff;
+    font-size: 25px;
+    line-height: 22px;
+}

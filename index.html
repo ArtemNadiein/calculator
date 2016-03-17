@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Calculator</title>
+    <link media="all" rel="stylesheet" href="css/all.css"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+<embed src="media/music.mp3" autostart="true" hidden="true" loop="false"></embed>
+<div id="wrapper">
+    <div class="content">
+        <img src="img/001.png" class="bubble" id="snack" width="392" height="231" alt="snack">
+        <img src="img/002.png" class="bubble" id="great" width="389" height="279" alt="great">
+        <img src="img/003.png" class="bubble" id="splash" width="397" height="285" alt="splash">
+        <img src="img/004.png" class="bubble" id="boom" width="359" height="330" alt="boom">
+        <img src="img/005.png" class="bubble" id="kapow" width="414" height="281" alt="kapow">
+        <img src="img/006.png" class="bubble" id="bazinga" width="400" height="284" alt="bazinga">
+        <img src="img/007.png" class="bubble" id="grrr" width="424" height="292" alt="grrr">
+        <img src="img/008.png" class="bubble" id="pufff" width="346" height="301" alt="pufff">
+        <img src="img/009.png" class="bubble" id="kaboom" width="281" height="208" alt="kaboom">
+        <img src="img/010.png" class="bubble" id="crack" width="613" height="199" alt="crack">
+        <img src="img/011.png" class="bubble" id="bang" width="367" height="360" alt="bang">
+        <div class="inner">
+            <span id="calc"></span>
+            <span id="memories">M</span>
+            <img class="calc" src="img/calc.png" width="560" height="550" alt="calc" usemap="#568ec715306a3">
+            <map name="568ec715306a3">
+                <area shape="poly"
+                      coords="81,463,19,465,14,465,9,465,9,504,9,542,93,542,176,542,176,540,175,537,167,500,159,462,158,461,158,460,151,460,144,460"
+                      OnClick="document.getElementById('calc').innerHTML += '0'">
+                <area shape="poly"
+                      coords="259,456,238,457,217,457,196,458,180,459,164,459,163,460,162,461,171,501,179,541,180,541,180,542,234,542,289,542,290,515,290,489,291,473,292,457,291,456,291,455,285,455,280,455"
+                      OnClick="document.getElementById('calc').innerHTML += '.'">
+                <area shape="poly"
+                      coords="371,456,297,479,295,480,294,482,293,511,292,541,293,541,293,542,381,542,469,542,469,541,470,541,460,490,451,439,450,436,450,433,448,433,446,433"
+                      OnClick="document.getElementById('calc').innerHTML += '√'">
+                <area class="button" data-img="boom" shape="poly"
+                      coords="439,351,439,353,456,445,473,538,474,540,474,542,513,542,552,542,552,450,552,358,552,358,551,358,498,354,446,349,442,349,439,349"
+                      OnClick="resEqual()">
+                <area shape="poly"
+                      coords="300,344,299,346,297,410,294,474,295,474,296,475,372,452,448,429,448,428,449,427,442,388,435,349,435,348,434,348,380,346,325,344,312,343,300,343"
+                      OnClick="document.getElementById('calc').innerHTML += '3'">
+                <area shape="poly"
+                      coords="137,338,137,340,143,371,150,403,155,426,160,450,160,453,160,455,168,455,177,455,232,453,287,451,289,451,292,451,293,397,295,344,295,343,294,343,228,341,162,338,150,337,138,337"
+                      OnClick="document.getElementById('calc').innerHTML += '2'">
+                <area shape="poly"
+                      coords="9,334,8,334,8,397,8,460,10,460,11,461,83,458,156,456,156,455,157,454,147,403,136,352,135,346,134,340,133,338,132,337,78,335,24,333,17,333,9,333"
+                      OnClick="document.getElementById('calc').innerHTML += '1'">
+                <area shape="poly"
+                      coords="54,262,11,265,9,265,8,266,8,298,8,329,11,329,14,329,63,331,112,333,113,332,114,332,116,302,118,272,119,266,119,260,108,260,98,260"
+                      OnClick="document.getElementById('calc').innerHTML += '4'">
+                <area shape="poly"
+                      coords="207,256,123,260,122,260,122,261,119,296,116,332,117,332,118,333,195,336,272,338,273,337,274,337,288,296,303,256,303,254,303,253,297,253,291,253"
+                      OnClick="document.getElementById('calc').innerHTML += '5'">
+                <area shape="poly"
+                      coords="347,252,308,254,308,254,307,255,292,296,277,337,278,338,279,339,347,342,416,344,417,344,417,343,415,301,412,260,411,255,411,250,399,250,387,250"
+                      OnClick="document.getElementById('calc').innerHTML += '6'">
+                <area class="button" data-img="grrr" shape="poly"
+                      coords="479,245,421,249,418,249,415,249,415,255,415,261,418,302,420,344,421,344,422,345,481,349,540,353,546,354,552,354,552,298,552,241,544,241,537,241"
+                      OnClick="document.getElementById('calc').innerHTML += '-'">
+                <area shape="poly"
+                      coords="65,187,11,190,9,190,8,191,8,226,8,260,15,260,22,260,70,258,119,256,119,256,119,255,122,224,125,194,125,188,126,183,122,183,119,183"
+                      OnClick="document.getElementById('calc').innerHTML += '7'">
+                <area shape="poly"
+                      coords="185,179,130,183,129,183,129,184,125,220,122,256,123,256,123,256,190,254,257,252,258,252,258,251,253,213,248,176,244,175,241,175"
+                      OnClick="document.getElementById('calc').innerHTML += '8'">
+                <area shape="poly"
+                      coords="324,170,254,175,252,175,251,176,257,213,262,250,262,251,263,251,328,249,393,247,394,246,395,245,402,206,409,167,409,166,409,165,402,165,395,165"
+                      OnClick="document.getElementById('calc').innerHTML += '9'">
+                <area class="button" data-img="kapow" shape="poly"
+                      coords="475,160,414,165,413,166,412,168,405,206,399,245,399,246,400,246,475,241,550,236,551,236,552,236,552,196,552,157,544,156,537,156"
+                      OnClick="document.getElementById('calc').innerHTML += '+'">
+                <area class="button" data-img="splash" shape="poly"
+                      coords="422,90,421,91,431,125,440,159,445,159,449,159,499,156,550,152,551,152,552,152,552,122,552,92,546,92,540,92,497,91,455,90,438,89,422,89"
+                      OnClick="document.getElementById('calc').innerHTML += '*'">
+                <area class="button" data-img="crack" shape="poly"
+                      coords="308,88,307,88,307,128,307,167,308,168,310,168,373,164,436,159,436,159,437,158,427,124,418,91,417,89,416,88,389,88,362,88,335,87,309,87"
+                      OnClick="document.getElementById('calc').innerHTML += '/'">
+                <area class="button" data-img="pufff" shape="poly"
+                      coords="153,86,152,88,169,131,186,175,191,175,195,175,248,172,301,168,302,168,304,168,304,128,304,87,260,87,217,86,185,85,153,85"
+                      OnClick="document.getElementById('calc').innerHTML = ''">
+                <area class="button" data-img="snack" shape="poly"
+                      coords="8,135,8,187,16,187,24,186,103,181,182,176,182,175,183,174,166,130,148,86,135,85,122,84,65,84,8,83"
+                      OnClick="document.getElementById('calc').innerHTML = document.getElementById('calc').innerHTML.substring(0, document.getElementById('calc').innerHTML.length-1)">
+                <area class="button" data-img="kaboom" shape="poly"
+                      coords="128,10,127,11,120,44,113,77,112,79,112,81,114,82,117,82,186,82,256,83,256,81,255,78,250,46,245,13,244,11,244,8,186,8,128,8"
+                      OnClick="memories = +memories + +resEqual(); console.log(memories); document.getElementById('calc').innerHTML = ''; document.getElementById('memories').style.display = 'block' ">
+                <area class="button" data-img="great" shape="poly"
+                      coords="458,8,365,8,365,10,364,12,358,48,351,83,351,83,352,84,365,84,379,85,412,85,445,86,455,86,465,87,500,87,536,88,544,89,552,89,552,48,552,7,552,7,552,7"
+                      OnClick="document.getElementById('calc').innerHTML += (memories === 0)?'':memories">
+                <area class="button" data-img="bazinga" shape="poly"
+                      coords="248,8,248,9,253,45,259,81,259,82,260,84,304,84,347,84,355,47,362,9,362,9,362,8,305,8,249,7"
+                      OnClick="memories = +memories - +resEqual(); document.getElementById('calc').innerHTML = ''; document.getElementById('memories').style.display = 'block' ">
+                <area class="button" data-img="bang" shape="poly"
+                      coords="66,8,8,8,8,44,9,79,14,80,20,80,64,81,109,81,109,81,109,80,117,44,125,8,124,8,124,7"
+                      OnClick="memories = 0; document.getElementById('calc').innerHTML = ''; document.getElementById('memories').style.display = 'none' ">
+            </map>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
